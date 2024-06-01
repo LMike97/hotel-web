@@ -45,8 +45,8 @@
                 <div class="u-container-layout u-container-layout-1">
                   <h6 class="u-text u-text-grey-50 u-text-1">¿Alguna duda o comentario?</h6>
                   <h2 class="u-text u-text-grey-70 u-text-2">Contáctanos</h2>
-                  <p class="u-text u-text-grey-50 u-text-3">Av 555 Ejido San José Tateposco, 33-1386-2766<br>Lun – Vie: 9:00 am – 4:00 pm,<br>Sat: 9:00 am – 12 pm<br>
-                    <span class="u-text-palette-1-light-1">miguel.correa7143@alumnos.udg.mx</span>
+                  <p class="u-text u-text-grey-50 u-text-3">372 Luapele Rd, Honolulu, HI 96818, 33-1386-2766<br>Lun – Vie: 9:00 am – 4:00 pm,<br>Sat: 9:00 am – 12 pm<br>
+                    <span class="u-text-palette-1-light-1">miguel_cg97@hotmail.com</span>
                   </p>
                   <div class="u-social-icons u-spacing-20 u-social-icons-1">
                     <a class="u-social-url" target="_blank" href=""><span class="u-icon u-icon-circle u-social-facebook u-social-icon u-icon-1">
