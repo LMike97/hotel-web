@@ -7,56 +7,89 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Sistema De Gestión De Hoteles
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este es un sistema de gestión de hoteles construido con el framework **Laravel** y la suite **Laragon**. El sistema sigue el patrón de diseño **MVC** y permite a los usuarios gestionar hoteles, habitaciones, usuarios e imágenes. El proyecto incluye un sistema de login con diferentes roles de usuario: Administrador, Empleado, Cliente e Invitado.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Características
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Autenticación de usuarios y gestión de roles
+- Panel de administración para gestionar hoteles, habitaciones y usuarios
+- Interfaz de cliente para ver detalles de hoteles y habitaciones
+- Subida de imágenes para hoteles y habitaciones
+- Control de acceso basado en roles:
+  - Administrador: Acceso completo para gestionar todos los aspectos del sistema
+  - Empleado: Acceso limitado para gestionar detalles de hoteles y habitaciones
+  - Cliente: Acceso para ver detalles de hoteles y habitaciones
+  - Invitado: Puede navegar por hoteles y habitaciones sin necesidad de iniciar sesión
 
-## Learning Laravel
+## Instalación
+### Requsitos Previos
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- PHP
+- Composer
+- Node.js
+- MySQL o un RDBMS compatible
+- Laragon (recomendado para desarrollo local)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+> [!WARNING]
+> Versiones mínimas requeridas para este proyecto:
+> - PHP 7.3 | 8.0 o superior
+> - Laravel 8.12 o superior
+> - Node.js 12.5.0 o superior
+> - MySQL 5.7.24 o superior
 
-## Laravel Sponsors
+### Pasos
+1. **Clonar el Repositorio**
+   ```bash
+   git clone https://github.com/your-username/hotel-management-system.git
+   cd hotel-management-system
+2. **Instalar Dependencias**
+   ```bash
+   composer install
+   npm install
+   npm run dev
+3. **Configuración del Entorno**
+   - Copia el archivo `.env.example` a `.env`
+   - Actualiza el archivo `.env` con tu configuración de base de datos y otras configuraciones
+   ```bash
+   cp .env.example .env
+4. **Generar la Clave de la Aplicación**
+   ```bash
+   php artisan key:generate
+5. **Generar Migraciones y Seeders**
+   ```bash
+   php artisan migrate --seed
+6. **Servir la Aplicación**
+   ```bash
+   php artisan serve
+7. **Acceder a la Aplicación**
+   - Visita `http://localhost:_localport_` en tu navegador.
+  
+## Uso
+### Credenciales del Administrador
+- **Email:** `miguel@hotmail.com`
+- **Contraseña:** 123456
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+### Roles y Permisos
+- **Administador:** Acceso completo
+- **Empleado:** Gestionar detalles de hoteles y habitaciones
+- **Cliente:** Ver detalles de hoteles y habitaciones
+- **Invitado:** Navegar sin iniciar sesión
 
-### Premium Partners
+## Licencia
+Este proyecto está bajo la Licencia **CC BY-NC-ND 4.0**. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+## Contribuir
+Las solicitudes de pull son bienvenidas. Para cambios importantes, abre un issue primero para discutir lo que te gustaría cambiar.
 
-## Contributing
+## Contacto
+Para cualquier pregunta o sugerencia, no dudes en contactarme al [email](miguel_cg97@hotmail.com).
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+> [!TIP]
+> **Laragon** puede ser reemplazado con las siguientes suites y/o herramientas:
+> - **MAMP** (macOS, Windows): [MAMP](https://www.mamp.info/en/)
+> - **XAMPP** (macOS, Windows, Linux): [XAMPP](https://www.apachefriends.org/index.html)
+> - **Laravel Valet** (macOS): [Laravel Valet](https://laravel.com/docs/8.x/valet)
+> - **Homestead** (macOS, Windows, Linux): [Laravel Homestead](https://laravel.com/docs/8.x/homestead)
+> - **Docker** (macOS, Windows, Linux): [Docker](https://www.docker.com/)
