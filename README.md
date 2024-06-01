@@ -9,6 +9,17 @@
 
 # Sistema De Gestión De Hoteles
 
+## Tabla de Contenidos
+- [Descripción](#descripción)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Licencia](#licencia)
+- [Contribución](#contribuir)
+- [Contacto](#contacto)
+
+## Descripción
+
 Este es un sistema de gestión de hoteles construido con el framework **Laravel** y la suite **Laragon**. El sistema sigue el patrón de diseño **MVC** y permite a los usuarios gestionar hoteles, habitaciones, usuarios e imágenes. El proyecto incluye un sistema de login con diferentes roles de usuario: Administrador, Empleado, Cliente e Invitado.
 
 ## Características
@@ -24,6 +35,7 @@ Este es un sistema de gestión de hoteles construido con el framework **Laravel*
   - Invitado: Puede navegar por hoteles y habitaciones sin necesidad de iniciar sesión
 
 ## Instalación
+
 ### Requsitos Previos
 
 - PHP
@@ -40,51 +52,66 @@ Este es un sistema de gestión de hoteles construido con el framework **Laravel*
 > - MySQL 5.7.24 o superior
 
 ### Pasos
+
 1. **Clonar el Repositorio**
    ```bash
    git clone https://github.com/your-username/hotel-management-system.git
    cd hotel-management-system
+   
 2. **Instalar Dependencias**
    ```bash
    composer install
    npm install
    npm run dev
+   
 3. **Configuración del Entorno**
    - Copia el archivo `.env.example` a `.env`
    - Actualiza el archivo `.env` con tu configuración de base de datos y otras configuraciones
    ```bash
    cp .env.example .env
+   
 4. **Generar la Clave de la Aplicación**
    ```bash
    php artisan key:generate
+   
 5. **Generar Migraciones y Seeders**
    ```bash
    php artisan migrate --seed
+   
 6. **Servir la Aplicación**
    ```bash
    php artisan serve
+   
 7. **Acceder a la Aplicación**
    - Visita `http://localhost:_localport_` en tu navegador.
   
 ## Uso
+
 ### Credenciales del Administrador
+
 - **Email:** `miguel@hotmail.com`
 - **Contraseña:** 123456
 
 ### Roles y Permisos
+
 - **Administador:** Acceso completo
 - **Empleado:** Gestionar detalles de hoteles y habitaciones
 - **Cliente:** Ver detalles de hoteles y habitaciones
 - **Invitado:** Navegar sin iniciar sesión
 
 ## Licencia
+
 Este proyecto está bajo la Licencia **CC BY-NC-ND 4.0**. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Contribuir
+
 Las solicitudes de pull son bienvenidas. Para cambios importantes, abre un issue primero para discutir lo que te gustaría cambiar.
 
 ## Contacto
+
 Para cualquier pregunta o sugerencia, no dudes en contactarme al [email](miguel_cg97@hotmail.com).
+
+---
 
 > [!TIP]
 > **Laragon** puede ser reemplazado con las siguientes suites y/o herramientas:
